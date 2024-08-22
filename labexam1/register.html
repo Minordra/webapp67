@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="register.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <div class="form-container">
+    <form ><!-- action="user.html" method="post"> -->
+        <h1>สมัครสมาชิกผู้ใช้งาน</h1>
+        <h2>1.ข้อมูลส่วนตัว</h2>
+        <label for="username">ชื่อผู้ใช้:
+            <input class="user" type="text" id="username" name="username" placeholder="ชื่อผู้ใช้">
+        </label>
+        <div class="co"></div>              
+        <label for="name">ชื่อ-นามสกุล:
+            <input class="name" type="text" name="name" id="name" placeholder="ชื่อ-นามสกุล">
+        </label>      
+        <br>
+        <label for="phone">เบอร์โทร:
+            <input type="number" name="phone" id="phone" placeholder="เบอร์โทร">
+        </label>
+        <br>
+        <label for="email">อีเมล์:
+            <input type="email" name="email" id="email" placeholder="อีเมล์">
+        </label>
+        <label for="password">รหัสผ่าน:
+            <input type="password" name="pass" id="pass" placeholder="รหัสผ่าน">
+        </label>
+        <h2>2.ที่อยู่ปัจจุบัน</h2>
+        <label for="Address">บ้านเลขที่:
+            <input type="text" name="Address" id="Address" placeholder="บ้านเลขที่">
+        </label>
+        <label for="city">จังหวัด:
+            <input type="text" name="city" id="city" placeholder="จังหวัด">
+        </label>
+        <br>
+        <label for="District">อำเภอ:
+            <input type="text" name="District" id="District" placeholder="อำเภอ">            
+        </label>
+        <label for="parish">ตำบล:
+            <input type="text" name="parish" id="parish" placeholder="ตำบล">
+        </label>
+        <br>
+        <label for="zip code">รหัสไปรษณีย์:
+            <input type="text" name="zip code" id="zip code" placeholder="รหัสไปรษณีย์">
+        </label>
+        <label for="Address details">รายละเอียดที่อยู่:
+            <input type="text" name="Address details" id="Address details" placeholder="รายละเอียดที่อยู่">
+        </label>
+        <br>
+        <label for="upload">อัพโหลดรูปโปรไฟล์:
+            <input type="file" name="upload" id="upload">
+        <div class="form-buttons">
+            <a href="user.html"><input type="submit" value="สมัครสมาชิก"></a>
+            <input type="reset" value="ยกเลิก">
+        </div>
+    </form>
+</div>
+</body>
+</html>
