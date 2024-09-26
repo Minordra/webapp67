@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Movie Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        header{
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .form-title {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="homepage.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="homepage.html" class="nav-link" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="actors.php" class="nav-link">Actors</a></li>
+          <li class="nav-item"><a href="member.php" class="nav-link">Member</a></li>
+          <li class="nav-item"><a href="movie.php" class="nav-link active">Movie</a></li>
+
+        </ul>
+      </header>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-container">
+                    <h2 class="text-center form-title mb-5">Insert Movie Information</h2>
+                    <form method="post" action="insertmoviesuccess.php">
+                        <div class="mb-3">
+                            <label for="movie_id" class="form-label">รหัสภาพยนตร์</label>
+                            <input type="text" class="form-control" name="movie_id" id="movie_id" placeholder="กรอกรหัสภาพยนตร์">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="title" class="form-label">ชื่อเรื่อง</label>
+                            <input type="text" class="form-control" name="title" id="title" placeholder="กรอกชื่อเรื่อง">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="genre" class="form-label">ประเภท</label>
+                            <input type="text" class="form-control" name="genre" id="genre" placeholder="กรอกประเภทหนัง">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="price" class="form-label">ราคา</label>
+                            <input type="number" class="form-control" name="price" id="price" step="0.01" placeholder="กรอกราคา">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="release_date" class="form-label">วันฉาย</label>
+                            <input type="date" class="form-control" name="release_date" id="release_date"><br>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success btn-block">บันทึก</button>
+                        </div>
+                    </form>
+                    <br>
+                    <div class="d-grid">
+                        <a href="movie.php" class="btn btn-primary btn-block">Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
